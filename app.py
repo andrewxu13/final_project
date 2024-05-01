@@ -1,14 +1,13 @@
 import numpy as np
 import pandas as pd
+import datetime
 import pickle
 import streamlit as st
+from sklearn import preprocessing
 
 
-#@st.cache_resource
-def load_model():
-    return pickle.load(open('./logistic_regression.pkl', 'rb'))
-
-model = load_model()
+@st.cache_resource
+model = pickle.load(open('./logistic_regression.pkl', 'rb'))
 
 def calculate_bmi(height, weight):
     """ Calculate BMI from height in cm and weight in kg. """
