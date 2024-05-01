@@ -6,7 +6,7 @@ import streamlit as st
 import sklearn
 
 
-model = pickle.load(open('./logistic_regression.pkl', 'rb'))
+model = pickle.load(open('./logistic.pkl', 'rb'))
 
 def calculate_bmi(height, weight):
     """ Calculate BMI from height in cm and weight in kg. """
