@@ -5,7 +5,7 @@ import streamlit as st
 
 @st.cache_resource
 def load_model():
-    return pickle.load(open('./logistic_regression.pkl', 'rb'))
+    return pickle.load(open('logistic_regression.pkl', 'rb'))
 
 model = load_model()
 
