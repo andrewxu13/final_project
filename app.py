@@ -3,7 +3,8 @@ import pandas as pd
 import pickle
 import streamlit as st
 
-@st.cache_resource
+
+#@st.cache_resource
 def load_model():
     return pickle.load(open('./logistic_regression.pkl', 'rb'))
 
