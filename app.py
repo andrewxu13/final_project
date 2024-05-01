@@ -6,7 +6,6 @@ import streamlit as st
 from sklearn import preprocessing
 
 
-@st.cache_resource
 model = pickle.load(open('./logistic_regression.pkl', 'rb'))
 
 def calculate_bmi(height, weight):
