@@ -49,7 +49,7 @@ def main():
             "options": {"Never": 0, "Less than 1 per week": 1, "1 or 2 per week": 2, "Every other day": 3, "Everyday": 4, "Don't know": 8}
         },
         "snore": {
-            "question": "How often do you snore?",
+            "question": "Do you snore?",
             "options": {"Yes": 0, "No": 1, "Don't know": 8}
         },
         "aspirin": {
