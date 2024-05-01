@@ -3,7 +3,7 @@ import pandas as pd
 import datetime
 import pickle
 import streamlit as st
-import scikit-learn
+import sklearn
 
 
 model = pickle.load(open('./logistic_regression.pkl', 'rb'))
